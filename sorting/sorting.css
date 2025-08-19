@@ -1,0 +1,51 @@
+/* Vertical Tabs Full Width and Bolder Look */
+.tabs.vertical-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 2.5rem 0 0 0;
+    background: linear-gradient(90deg, #e3f2fd 60%, #b6c6e6 100%);
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 6px 24px rgba(30,60,114,0.13);
+    padding: 2.2rem 0 2.2rem 0;
+    gap: 1.5rem;
+    border: 1.5px solid #b0bec5;
+}
+.tabs.vertical-tabs .tab-link {
+    height : 4rem;
+    width: 90%;
+    display : flex;
+    align-items: center;
+    padding: 1.6rem 0.5rem;
+    text-decoration: none;
+    color: #1e3c72;
+    font-weight: 800;
+    font-size: 1.2rem;
+    background: white;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 2px 12px rgba(30,60,114,0.08);
+    transition: background 0.18s, color 0.18s, transform 0.18s, box-shadow 0.18s;
+    letter-spacing: 0.02em;
+    margin: 0 1.5rem;
+    cursor: pointer;
+    outline: none;
+    border-bottom: none;
+}
+.tabs.vertical-tabs .tab-link:hover, .tabs.vertical-tabs .tab-link:focus {
+    background: linear-gradient(90deg, #bbdefb 60%, #e3f2fd 100%);
+    
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 18px rgba(30,60,114,0.13);
+}
+.tabs.vertical-tabs .tab-link:last-child {
+    margin-bottom: 0;
+}
+.tabs.vertical-tabs a{
+    color: #0d47a1;
+    text-decoration: none;
+    margin-left : 3rem;
+    width : 100%;
+}

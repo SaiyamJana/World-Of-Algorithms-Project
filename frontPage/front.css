@@ -1,0 +1,47 @@
+
+/* Algorithm Cards */
+.algorithms-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.algo-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.algo-card h2 {
+    color: #1e3c72;
+    margin-bottom: 0.5rem;
+}
+
+.algo-card p {
+    color: #666;
+}
+
+.algo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+    background: #1e3c72;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer .footer-content p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}

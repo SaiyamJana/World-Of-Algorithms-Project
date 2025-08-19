@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffd369;
+}
+
+/* Hero Section */
+.hero {
+    background: #e3f2fd;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: #1e3c72;
+    text-shadow: 0 4px 16px rgba(30,60,114,0.18), 0 1px 0 #fff;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    animation: h1-3d-float 2.5s cubic-bezier(.4,1.6,.6,1) infinite alternate;
+}
+
+@keyframes h1-3d-float {
+    0% {
+        transform: rotateY(-8deg) rotateX(2deg) scale(1.04) translateY(0);
+        text-shadow: 0 4px 16px rgba(30,60,114,0.18), 0 1px 0 #fff;
+    }
+    50% {
+        transform: rotateY(8deg) rotateX(-2deg) scale(1.08) translateY(-4px);
+        text-shadow: 0 8px 24px rgba(30,60,114,0.22), 0 2px 0 #fff;
+    }
+    100% {
+        transform: rotateY(-8deg) rotateX(2deg) scale(1.04) translateY(0);
+        text-shadow: 0 4px 16px rgba(30,60,114,0.18), 0 1px 0 #fff;
+    }
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background: #1e3c72;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer .footer-content p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Algorithms</title>
+    <link rel="stylesheet" href="front.css">
+    <link rel="stylesheet" href="/common.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">🌐 World of Algorithms</div>
+        <nav>
+            <a href="front.html">Home</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Explore, Learn, and Visualize Algorithms</h1>
+        <p>Interactive animations to make algorithms easy and fun.</p>
+    </section>
+
+    <!-- Algorithm Blocks -->
+    <main class="algorithms-container">
+        <div class="algo-card" onclick="window.location.href='../sorting/sorting.html'">
+            <h2>Sorting Algorithms</h2>
+            <p>Visualize Bubble Sort, Merge Sort, Quick Sort, and more.</p>
+        </div>
+        <div class="algo-card" onclick="goTo('pathfinding.html')">
+            <h2>Pathfinding Algorithms</h2>
+            <p>Explore BFS, DFS, Dijkstra’s, and A* in action.</p>
+        </div>
+        <div class="algo-card" onclick="goTo('graph.html')">
+            <h2>Graph Algorithms</h2>
+            <p>Learn Kruskal’s, Prim’s, and other graph-based techniques.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 World of Algorithms. All Rights Reserved.</p>
+            <p>Made with ❤️ for learners worldwide.</p>
+        </div>
+    </footer>
+
+    <script src="front.js"></script>
+</body>
+</html>

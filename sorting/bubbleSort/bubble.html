@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Sort - Step View</title>
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4c8.png">
+    <link rel="stylesheet" href="bubble.css">
+</head>
+<body>
+    <header class="woa-header">
+        <button class="back-btn" onclick="window.location.href='../sorting.html'">&larr; Back</button>
+        <span class="woa-title">World of Algorithms</span>
+    </header>
+    <header class="hero">
+        <!-- Header with bubble sort Algo -->
+        <h1>Bubble Sort Visualization</h1>
+        <p>Enter Array size and Array elements with your choice</p>
+    </header>
+    
+    <main class="input-container">
+        <div class="input">
+            <div class="input-box">
+                <label for="arraySize">Array Size:</label>
+                <input type="number" id="arraySize" min="1" max="100" value="10" required autocomplete="off">
+            </div>
+            <div class="input-box">
+                <label for="arrayElements">Array Elements (comma-separated):</label>
+                <input type="text" id="arrayElements" placeholder="e.g., 5,3,8,6,2" autocomplete="off">
+            </div>
+            <div class="input-box">
+                <button id="generateArray">Generate Array</button>
+            </div>
+        </div>
+        <div class ="algorithm-language">
+            <!-- algorithm language selection option -->
+            <div class="select">
+            <label for="languageSelect" class="selection-header">Select Language:</label>
+            <select id="languageSelect">
+                <option value="c">C</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="cpp">C++</option>
+            </select>
+            </div>
+            <!-- adding a button for taking input from this -->
+            <button id="language-btn">Submit</button>
+        </div>
+    </main>
+    <section class="container-full">
+        <div class="container">
+        <div class="array-container">
+            <h2>Array Visualization</h2>
+            <div id="arrayVisualization" class="array-visualization">
+                <!-- Array elements will be displayed here -->
+            </div>
+            <div id="stepComment" style="margin-top:2vh;font-size:1.3vw;color:#fff;text-align:center;min-height:2em;"></div>
+        </div>
+        <div class="steps-container">
+            <!-- prev and next button -->
+            <button id="prevStep" class="step-button"> &larr; Previous Step</button>
+            <button id="sortButton" class="step-button">Sort Array</button>
+            <button id="nextStep" class="step-button">Next Step &rarr; </button>
+        </div>
+        </div>
+        <div class="code-container">
+            <h2>Code Snippet</h2>
+            <pre id="codeSnippet" class="code-snippet">
+                <!-- Code snippet will be displayed here -->
+            </pre>
+        </div>
+    </section>
+    <script src="bubble.js"></script>
+</body>
+</html>
